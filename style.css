@@ -1,87 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
+.container {
+  padding: 0 2rem;
 }
 
- h1{
-    font-size: 2rem;
- }
-
- .conteudo{
-    margin: 0% 0;
-    float: left;
-    margin-left: 24rem;
- }
- 
- .conteudo h1{
-    text-align: center;
-    background-color: blue;
-    width: 70%;
-    height: 70%;
- }
-
- main{
-    width: 52%;
- }
-
- header{
-    text-align: center;
-    width: 100%;
-    background-color: green;
+h1 {
+  font-size: 2rem;
 }
 
- header h1{
-    margin: 0;
+.conteudo-principal {
+  display: flex;
 }
 
- .rodape{
-    background-color: #F0F0F0;
-    float: left;
-    font-size: 0.75rem;
-    margin: 2% 0;
-    text-align: center;
-    padding: 2%;
-    clear: both;
-    width: 96.5%;
+.conteudo {
+  flex: 2;
+  background-color: blue;
 }
 
-.asideI{
-    background-color: #F0F0F0;
-    float: right;
-    padding: 1%;
-    width: 20%;
-    
-}
-.asideII{
-    background-color: #F0F0F0;
-    float: left;
-    padding: 1%;
-    width: 20%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.conteudo main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.nav-esquerdo ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 29rem;
-
+.conteudo h1 {
+  text-align: center;
 }
 
-.nav-esquerdo button{
-    height: 15rem;
+header {
+  text-align: center;
+  background-color: green;
 }
 
-.cabecalho{
-    height: 4rem;
+header h1 {
+  margin: 0;
+}
+
+.rodape {
+  background-color: #f0f0f0;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.asideI {
+  background-color: #f0f0f0;
+  flex: 1;
+  padding: 1rem;
+}
+.asideII {
+  background-color: #f0f0f0;
+  flex: 1;
+}
+
+.nav-esquerdo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.nav-esquerdo button {
+  padding: 1rem;
+}
+
+.cabecalho {
+  height: 4rem;
 }
